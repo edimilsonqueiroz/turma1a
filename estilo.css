@@ -53,6 +53,7 @@ section{
     justify-content: center;
     align-items: center;
     padding: 50px 0 50px 0;
+    width: 100%;
 }
 
 .sobre h1{
@@ -119,6 +120,7 @@ section{
 
 .lista-habilidades{
     display: flex;
+
 }
 
 .item-habilidades{
@@ -128,5 +130,40 @@ section{
     padding:  10px;
     border-radius: 25px;
     font-size: 25px;
+}
+
+
+
+
+/* RESPONSIVIDADE DO SITE */
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  ul{
+    flex-direction: column;
+  }
+
+  p{
+    max-width: 100%;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+
+  .card-projeto{
+    margin-bottom: 30px;
+  }
+
+  .lista-habilidades{
+    display: block;
+  }
 }
 
